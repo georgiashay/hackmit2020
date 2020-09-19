@@ -10,7 +10,7 @@ import { StatisticsPage } from '../pages/statistics/statistics';
 import { HistoryPage } from '../pages/history/history';
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
 import { FoodEntryPage } from '../pages/food-entry/food-entry';
-
+import { AddFoodPage } from '../pages/add-food/add-food';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -26,7 +26,8 @@ import { FoodsProvider } from '../providers/foods/foods';
     HistoryPage,
     TabsControllerPage,
     FoodEntryPage,
-    FoodFilterPipe
+    FoodFilterPipe,
+    AddFoodPage
   ],
   imports: [
     BrowserModule,
@@ -40,7 +41,8 @@ import { FoodsProvider } from '../providers/foods/foods';
     StatisticsPage,
     HistoryPage,
     TabsControllerPage,
-    FoodEntryPage
+    FoodEntryPage,
+    AddFoodPage
   ],
   providers: [
     StatusBar,

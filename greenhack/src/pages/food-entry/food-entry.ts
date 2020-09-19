@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FoodsProvider } from "../../providers/foods/foods";
+import { AddFoodPage } from "../add-food/add-food";
 
 @Component({
   selector: 'page-food-entry',
@@ -18,7 +19,7 @@ export class FoodEntryPage {
   }
 
   addFood(i) {
-    console.log(i);
+    this.navCtrl.push(AddFoodPage, { item: this.items[i] });
   }
 
 }
