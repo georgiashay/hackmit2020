@@ -12,6 +12,8 @@ import { FoodEntryPage } from '../pages/food-entry/food-entry';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
+import { FoodFilterPipe } from "../pipes/filter.pipe";
+
 @NgModule({
   declarations: [
     MyApp,
@@ -19,11 +21,12 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     StatisticsPage,
     HistoryPage,
     TabsControllerPage,
-    FoodEntryPage
+    FoodEntryPage,
+    FoodFilterPipe
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -37,7 +40,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
   ]
 })
 export class AppModule {}
