@@ -1,6 +1,9 @@
 import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
+
+import { HttpClientModule } from "@angular/common/http";
+
 import { MyApp } from './app.component';
 import { DiaryPage } from '../pages/diary/diary';
 import { StatisticsPage } from '../pages/statistics/statistics';
@@ -13,6 +16,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { FoodFilterPipe } from "../pipes/filter.pipe";
+import { FoodsProvider } from '../providers/foods/foods';
 
 @NgModule({
   declarations: [
@@ -27,6 +31,7 @@ import { FoodFilterPipe } from "../pipes/filter.pipe";
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
+    HttpClientModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -41,6 +46,7 @@ import { FoodFilterPipe } from "../pipes/filter.pipe";
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
+    FoodsProvider,
   ]
 })
 export class AppModule {}

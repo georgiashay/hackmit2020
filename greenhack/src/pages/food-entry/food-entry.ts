@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { FoodsProvider } from "../../providers/foods/foods";
 
 @Component({
   selector: 'page-food-entry',
@@ -10,17 +11,10 @@ export class FoodEntryPage {
   public searchText: string;
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(public navCtrl: NavController) {
-    this.items = [{
-      "_id":"5f665d12160a490456c47c88",
-      "name":"carrot",
-      "ced":1.326,
-      "ghg":0.092
-    },{
-      "_id":"5f665ddf160a490456c47c89",
-      "name":"Beef, meat",
-      "ced":67.895,
-      "ghg":33.105}];
+  constructor(public navCtrl: NavController, public foodService: FoodsProvider) {
+    foodService.getFoods().then((foods) => {
+      this.items = foods;
+    });
   }
 
   addFood(i) {
