@@ -2,11 +2,11 @@ import { NgModule, ErrorHandler } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { IonicApp, IonicModule, IonicErrorHandler } from 'ionic-angular';
 import { MyApp } from './app.component';
-import { FoodEntryPage } from '../pages/food-entry/food-entry';
+import { DiaryPage } from '../pages/diary/diary';
 import { StatisticsPage } from '../pages/statistics/statistics';
 import { HistoryPage } from '../pages/history/history';
 import { TabsControllerPage } from '../pages/tabs-controller/tabs-controller';
-import { FoodEntry2Page } from '../pages/food-entry2/food-entry2';
+import { FoodEntryPage } from '../pages/food-entry/food-entry';
 
 
 import { StatusBar } from '@ionic-native/status-bar';
@@ -15,11 +15,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    FoodEntryPage,
+    DiaryPage,
     StatisticsPage,
     HistoryPage,
     TabsControllerPage,
-    FoodEntry2Page
+    FoodEntryPage
   ],
   imports: [
     BrowserModule,
@@ -28,11 +28,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    FoodEntryPage,
+    DiaryPage,
     StatisticsPage,
     HistoryPage,
     TabsControllerPage,
-    FoodEntry2Page
+    FoodEntryPage
   ],
   providers: [
     StatusBar,
