@@ -4,6 +4,15 @@
       Diary
     </ion-title>
   </ion-navbar>
+  <ion-toolbar text-center mode="md">
+    <div style="float:left;cursor:pointer;" (click)="goBackInTime()">
+      <ion-icon name="arrow-back" style="padding-left: 1em;"></ion-icon>
+    </div>
+    Today
+    <div style="float:right;cursor:pointer" (click)="goForwardInTime()">
+      <ion-icon name="arrow-forward" style="padding-right: 1em;"></ion-icon>
+    </div>
+  </ion-toolbar>
 </ion-header>
 <ion-content padding id="diarypage">
   <ion-card id="breakfast-card">
