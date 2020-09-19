@@ -1,0 +1,363 @@
+﻿food_id,desc,weight_basis,ced,ghg
+0,"Beet, garden, roots",weight of roots; juice,1.221,0.194
+1,"Beet, sugar",dry weight of sugar (sucrose),4.574,0.391
+2,"Beet, sugar, molasses",weight of molasses,3.476,0.288
+3,Burdock,weight of roots,1.891,0.284
+4,Carrot,"weight of roots, with or without peel, excluding tops",1.326,0.092
+5,"Carrot, juice",weight of juice at single strength (or standard dilution),6.608,1.071
+6,"Chicory, roots",weight of roots,0.154,0.05
+7,"Ginseng, dried",dry weight of roots,0,0.87
+8,Horseradish,"weight of root, ground",1.422,0.213
+9,Parsnip,weight of roots with or without peel,1.621,0.243
+10,"Radish, roots",weight of roots,1.578,0.237
+11,"Radish, Oriental, roots",weight of roots,1.806,0.271
+12,Rutabaga,weight of roots; excluding tops,1.678,0.252
+13,"Turnip, roots",weight of roots,1.749,0.498
+14,"Arrowroot, flour",dry weight of flour,0.625,0.079
+15,"Artichoke, Jerusalem",edible portion of tuber,4.028,0.544
+16,Cassava,weight of root; dry tapioca,0.625,0.079
+17,"Dasheen, corm",weight of the corm,1.422,0.213
+18,Ginger,weight of roots; excluding peel,1.536,0.95
+19,"Ginger, dried",dry weight of roots; excluding peel,6.513,0.977
+20,"Potato, chips","weight of potato from chip or stick, with or without peel",19.75,1.545
+21,"Potato, dry (granules/ flakes)",dry weight of granules or flakes,9.7,1.309
+22,"Potato, flour",dry weight of flour or potato starch,6.631,0.953
+23,"Potato, tuber, w/peel",weight of tuber;  including peel,1.611,0.217
+24,"Potato, tuber, w/o peel",weight of tuber;  excluding peel,2.143,0.216
+25,Sweet potato,"weight of roots, with or without peel; juice",2.24,0.302
+26,"Tanier, corm",weight of corm,1.422,0.213
+27,Turmeric,weight of roots,1.422,0.213
+28,"Yam, true",weight of roots,1.869,1.021
+29,Yam bean,weight of roots,1.756,0.237
+30,"Beet, garden, tops",weight of leaves,4.593,0.332
+31,"Chicory, tops",weight of leaves,1.215,0.064
+32,"Dasheen, leaves",weight of the leaves,2.566,0.186
+33,"Garlic, bulb",dry weight of bulb; excluding skin (outer scales),2.932,0.743
+34,"Onion, bulb",weight of bulb; excluding outer skin,2.83,0.269
+35,"Onion, bulb, dried",dry weight of bulb; excluding outer skin,22.152,2.102
+36,"Shallot, bulb",weight of bulb; excluding skin,2.896,0.275
+37,"Chive, fresh leaves",weight of fresh leaves,1.551,0.221
+38,Leek,weight of whole plant; including leaves and bulb,2.55,0.069
+39,"Onion, green",weight of bulb or bulb and leaves,1.231,0.085
+40,"Amaranth, leafy",weight of leaf,2.566,0.186
+41,"Cilantro, leaves",weight of leaves,1.83,0.261
+42,"Dandelion, leaves",weight of leaves,1.06,0.056
+43,Dillweed,weight of leaves,1.551,0.221
+44,Endive,weight of leaves,1.23,0.065
+45,"Lettuce, head",weight of leaves; juice,2.084,0.158
+46,"Lettuce, leaf",weight of leaves,3.994,0.229
+47,"Parsley, leaves",weight of leaves and stems,1.628,0.232
+48,Radicchio,weight of leaves,1.166,0.061
+49,Spinach,weight of leaves; juice,2.156,0.307
+50,Swiss chard,weight of leaves and stalks,2.797,0.202
+51,Arugula,weight of leaves,4.285,0.31
+52,"Broccoli, Chinese","weight of flower buds, adjoining stems and leaves",4.291,0.486
+53,"Cabbage, Chinese, bok choy",weight of leaves and stems,0.527,0.134
+54,Collards,weight of leaves,0.809,0.206
+55,"Cress, garden",weight of leaves,3.618,0.262
+56,Kale,weight of leaves,0.758,0.193
+57,Mustard greens,weight of leaves and stems,0.499,0.127
+58,"Turnip, greens",weight of leaves,0.66,0.168
+59,Watercress,weight of leaves and stems; juice,2.797,0.202
+60,Broccoli,weight of flower heads and adjoining stems,7.037,0.797
+61,Brussels sprouts,weight of leaf sprouts,4.185,0.49
+62,Cabbage,weight of leaves,1.375,0.219
+63,"Cabbage, Chinese, napa",weight of leaves,0.527,0.134
+64,"Cabbage, Chinese, mustard",weight of leaves,0.499,0.127
+65,Cauliflower,weight of flower heads and adjoining stems,4.404,0.934
+66,"Soybean, seed",dry weight of seed or bean,2.716,1.154
+67,"Soybean, flour","dry weight of flour, soy meal, soy protein concentrate and isolate",2.963,0.406
+68,"Soybean, soy milk",total weight of milk,1.683,0.258
+69,"Soybean, oil",weight of oil,7.616,0.807
+70,"Bean, snap, succulent",weight of bean and pod,5.786,0.754
+71,"Pea, edible podded, succulent",weight of pea and pod,5.38,0.701
+72,"Bean, broad, succulent",weight of bean and pod,5.075,0.662
+73,"Bean, cowpea, succulent",weight of bean; excluding pod,5.075,0.662
+74,"Bean, lima, succulent",weight of bean; excluding pod,5.075,0.662
+75,"Pea, succulent",weight of peas,3.5,1.33
+76,"Pea, pigeon, succulent",weight of pea,3.227,1.054
+77,"Bean, black, seed",dry weight of bean,4.756,0.308
+78,"Bean, broad, seed",dry weight of bean,4.756,1.168
+79,"Bean, cowpea, seed",dry weight of bean,4.756,0.61
+80,"Bean,  great northern, seed",dry weight of bean,4.756,0.308
+81,"Bean, kidney, seed",dry weight of bean,4.756,0.308
+82,"Bean, lima, seed",dry weight of bean,4.756,0.308
+83,"Bean, mung, seed",dry weight of bean,1.32,1.88
+84,"Bean, navy, seed",dry weight of bean,4.756,0.308
+85,"Bean, pink, seed",dry weight of bean,4.756,0.308
+86,"Bean, pinto, seed",dry weight of bean,4.756,0.308
+87,"Chickpea, seed",dry weight of bean,1.543,0.491
+88,"Guar, seed",weight of bean,1.32,1.4
+89,"Lentil, seed",dry weight of edible seed,1.32,1.88
+90,"Pea, dry",dry weight of pea,3.647,0.617
+91,"Pea, pigeon, seed",dry weight of pea,3.227,1.054
+92,Tomatillo,weight of fruit; excluding outer husks,2.629,0.47
+93,Tomato,"weight of pulp, seeds and skin; tomatoes without skin but with seed (example canned whole tomatoes)",2.629,0.47
+94,"Tomato, paste",weight of concentrated tomato pulp from food described as paste; excluding seeds and skin,1.438,0.118
+95,"Tomato, puree",weight of concentrated tomato pulp (from food described as puree or sauce); excluding seeds and skin,10.581,1.147
+96,"Tomato, dried",weight of dried tomato (may include skin and/or seeds),40.826,7.304
+97,"Tomato, juice",weight of juice at single strength (or standard dilution),2.556,0.153
+98,Eggplant,"weight of whole vegetable; including seeds, with or without peel",2.94,0.526
+99,Okra,weight of pods; including seeds,2.773,0.496
+100,"Pepper, bell",weight of flesh; excluding seeds and stem,6.881,0.525
+101,"Pepper, bell, dried",dry weight of flesh only,68.797,5.245
+102,"Pepper, nonbell","weight of flesh, with or without seeds; excluding stem",6.824,0.799
+103,"Pepper, nonbell, dried",dry weight of flesh or flesh and seeds,57.218,4.362
+104,Cantaloupe,weight of pulp; excluding seeds and outer rind,2.862,0.49
+105,Honeydew melon,weight of pulp; excluding seeds and rind,3.168,0.284
+106,Watermelon,weight of pulp and rind; excluding seeds,2.803,1.946
+107,"Watermelon, juice",weight of juice at single strength (or standard dilution),8.085,2.293
+108,Balsam pear,weight of whole fruit,0.84,0.397
+109,"Chayote, fruit",weight of fruit,0.84,0.397
+110,Chinese waxgourd,weight of flesh; including or excluding peel,2.045,0.147
+111,Cucumber,weight of flesh and seeds; including or excluding peel,0.865,0.409
+112,Pumpkin,weight of pulp; excluding seeds and rind,2.746,0.218
+113,"Pumpkin, seed",weight of dried seed only,1.44,0.103
+114,"Squash, summer","weight of flesh, seeds and peel",0.193,1.229
+115,"Squash, winter",weight of flesh; excluding seeds and peel,1.354,0.063
+116,Citron,weight of pulp; excluding peel,5.277,0.593
+117,Citrus hybrids,weight of pulp; excluding seeds and peel,3.562,0.4
+118,Orange,weight of pulp; excluding seeds and peel,3.726,0.294
+119,"Orange, juice",weight of juice at single strength (or standard dilution),5.573,0.509
+120,"Orange, peel",weight of peel only,2.72,0.214
+121,Tangerine,weight of pulp; excluding seeds and peel,3.562,0.4
+122,"Tangerine, juice",weight of juice at single strength (or standard dilution),10.559,1.572
+123,Kumquat,weight of fruit; including peel; excluding seeds,2.849,0.32
+124,Lemon,weight of pulp; excluding seeds and peel,4.678,0.422
+125,"Lemon, juice",weight of juice at single strength (or standard dilution),6,0.332
+126,"Lemon, peel",weight of peel only,2.638,0.297
+127,Lime,weight of pulp; excluding seeds and peel,3.166,0.612
+128,"Lime, juice",weight of juice at single strength (or standard dilution),13.857,1.943
+129,Grapefruit,weight of pulp; excluding seeds and rind,5.277,1.21
+130,"Grapefruit, juice",weight of juice at single strength (or standard dilution),11.218,1.646
+131,"Apple, fruit with peel","weight of apple; including peel, excluding core and stem",1.595,0.228
+132,"Apple, peeled fruit","weight of apple; excluding peel, core and stem",1.868,0.267
+133,"Apple, dried","dry weight; excluding peel, core, stem",8.839,1.265
+134,"Apple, juice",weight of juice at single strength (or standard dilution),7.438,1.288
+135,"Apple, sauce",weight of applesauce,2.012,0.288
+136,Pear,"weight of pulp, with or without peel; excluding core and stem",2.922,0.249
+137,"Pear, dried","weight of dried pulp, with or without peel",13.16,1.121
+138,"Pear, juice",weight of juice at single strength (or standard dilution),9.23,1.315
+139,Cherry,weight of fruit; including skin; excluding pit and stem,4.36,0.51
+140,"Cherry, juice",weight of juice at single strength (or standard dilution),10.482,1.587
+141,Apricot,"weight of pulp, with or without peel; excluding pit",2.195,0.464
+142,"Apricot, dried","dry weight of pulp, with or without peel; excluding pit",11.095,1.408
+143,"Apricot, juice",weight of juice at single strength (or standard dilution),8.594,1.399
+144,Nectarine,weight of pulp; including peel; excluding pit and stem,2.235,0.284
+145,Peach,"weight of pulp, with or without peel; excluding pit",2.897,0.274
+146,"Peach, dried","weight of dried pulp, with or without peel; excluding pit",17.775,1.678
+147,"Peach, juice",weight of juice at single strength (or standard dilution),9.823,1.408
+148,Plum,weight of pulp with peel; excluding pit,2.154,0.576
+149,"Plum, prune, fresh","weight of plum, with peel; excluding pit",2.154,0.273
+150,"Plum, prune, dried","weight of dried flesh, with or without peel; excluding pit",11.643,1.478
+151,"Plum, prune, juice",weight of juice at single strength (or standard dilution),8.594,1.399
+152,Blackberry,weight of berry,6.475,0.599
+153,"Blackberry, juice",weight of juice at single strength (or standard dilution),13.375,1.728
+154,Boysenberry,weight of berry,6.475,0.599
+155,Raspberry,weight of berry,5.328,0.237
+156,"Raspberry, juice",weight of juice at single strength (or standard dilution),11.508,1.555
+157,Blueberry,weight of berry,3.51,0.496
+158,"Currant, dried",dry weight of berry,28.264,0.684
+159,Gooseberry,weight of berry,6.226,0.84
+160,Huckleberry,weight of berry,6.537,0.605
+161,Mulberry,weight of fruit,6.475,0.599
+162,Grape,"weight of grape, with skin, and with or without seeds",2.81,0.478
+163,"Grape, juice",weight of juice at single strength (or standard dilution),8.795,1.576
+164,"Grape, raisin",dry weight of raisin,28.264,0.684
+165,"Grape, wine and sherry",weight of wine or sherry,7.674,0.78
+166,"Kiwifruit, fuzzy",weight of pulp and peel.,6.31,0.264
+167,Cranberry,weight of berry,6.35,1.418
+168,"Cranberry, dried",dry weight of berry,41.345,3.825
+169,"Cranberry, juice",weight of juice at single strength (or standard dilution),13.375,1.728
+170,Strawberry,weight of berry; excluding leaf cap,8.289,0.614
+171,"Strawberry, juice",weight of juice at single strength (or standard dilution),15.448,1.732
+172,Almond,weight of nutmeat,23.2,2.272
+173,"Almond, oil",weight of oil,23.2,2.272
+174,Brazil nut,weight of nutmeat,13.97,2.057
+175,Butternut,weight of nutmeat,13.97,2.057
+176,Cashew,weight of nutmeat,13.97,4.999
+177,Chestnut,weight of  nutmeat,17.322,1.269
+178,"Coconut, meat",weight of meat; excluding milk and shell,5.772,1.521
+179,"Coconut, dried",dry weight of meat; excluding milk and shell,5.501,1.449
+180,"Coconut, milk",weight of milk only; excluding meat and shell,3.006,0.792
+181,"Coconut, oil",weight of oil,11.9,2.729
+182,Hazelnut,weight of nutmeat,28.4,0.99
+183,Macadamia nut,weight of nutmeat,13.97,2.057
+184,Pecan,weight of nutmeat,13.97,2.057
+185,Pine nut,weight of nutmeat,13.97,2.057
+186,Pistachio,weight of nutmeat,14.389,1.792
+187,Walnut,weight of nutmeat,13.97,1.657
+188,"Barley, pearled barley",dry weight of barley,2.584,0.393
+189,"Barley, flour",dry weight of flour,2.374,0.358
+190,"Barley, bran",dry weight of bran,2.584,0.393
+191,Buckwheat,dry weight of groats; whole groat flour,2.584,0.393
+192,"Corn, field, flour",dry weight of whole grain flour; masa harina,5.8,0.55
+193,"Corn, field, meal",dry weight of whole grain or degermed meal; dry weight of corn ingredient from corn or cornmeal based chips or snacks; dry weight of hominy,5.8,0.55
+194,"Corn, field, bran",dry weight of bran,5.8,0.55
+195,"Corn, field, starch",dry weight of corn starch,8.8,0.76
+196,"Corn, field, syrup",weight of syrup,8.8,0.76
+197,"Corn, field, oil",weight of oil,15.166,1.199
+198,"Corn, pop",weight of kernels; excluding cob and husk,2.584,0.393
+199,"Corn, sweet",weight of kernels; excluding cob and husk,6.642,0.757
+200,"Millet, grain",dry weight of grain,2.584,0.47
+201,"Oat, bran",dry weight of bran,4.686,0.498
+202,"Oat, flour",dry weight of flour,4.686,0.498
+203,"Oat, groats/rolled oats",dry weight,2.771,0.474
+204,"Rice, white",dry weight of grain,5.839,1.541
+205,"Rice, brown",dry weight of grain or brown rice flour,6.687,2.061
+206,"Rice, flour",dry weight of flour,5.398,1.357
+207,"Rice, bran",dry weight of bran,5.398,1.357
+208,"Rye, grain",dry weight of grain; weight of whole grain flour,2.696,0.385
+209,"Rye, flour",dry weight of flour,3.949,0.418
+210,"Sorghum, syrup",weight of syrup,5.079,0.488
+211,"Triticale, flour",dry weight of flour,2.374,0.358
+212,"Wheat, grain",dry weight of grain,2.235,0.347
+213,"Wheat, flour",dry weight of flour,2.374,0.358
+214,"Wheat, germ",dry weight of germ,2.374,0.358
+215,"Wheat, bran",dry weight of bran,2.374,0.358
+216,Wild rice,dry weight of grain,6.223,1.771
+217,"Alfalfa, seed",weight of dry seed,8.24,6.25
+218,"Basil, fresh leaves",weight of leaves and stems,1.551,0.221
+219,"Basil, dried leaves",dry weight of leaves and stems,17.509,2.495
+220,"Herbs, other",weight of leaves and stems,1.551,0.221
+221,Marjoram,weight of leaves and stems,1.551,0.221
+222,"Parsley, dried leaves",dried weight of leaves and stems,11.875,1.692
+223,Savory,weight of leaves and flower buds,1.551,0.221
+224,Cinnamon,dry weight of spice: stick or ground powder,0,0.87
+225,"Coriander, seed",weight of seed,0,0.87
+226,"Dill, seed",dry weight of seed,0,0.87
+227,"Pepper, black and white",dry weight of pepper,0,0.87
+228,"Spices, other",dry weight,0,0.87
+229,"Flax, seed","N/A - Does not exist in ""commodity vocabulary"" weight basis file in current or previous release",2.584,0.393
+230,"Flax seed, oil",weight of oil; nutrient fat from flax seeds,14.641,2.334
+231,"Rapeseed, oil",weight of oil,13.328,2.275
+232,"Sesame, seed",dry weight of seed,2.584,1.05
+233,"Sesame, oil",weight of oil,14.641,2.334
+234,"Safflower, oil",weight of oil,14.641,2.334
+235,"Sunflower, seed",dry weight of seeds,6.382,0.848
+236,"Sunflower, oil",weight of oil,5.794,2.646
+237,"Cottonseed, oil",weight of oil,24.8,2.14
+238,Mushroom,weight of caps or caps and stems,4.987,3.093
+239,Asparagus,weight of edible portion of spears/stems,20.181,2.171
+240,"Bamboo, shoots",weight of shoots,10.678,1.149
+241,Cactus,weight of pulp; excluding peel; juice,0.874,0.413
+242,"Fennel, Florence",weight of leaves,5.881,0.331
+243,Kohlrabi,weight of leaves and stems,8.181,0.958
+244,"Palm heart, leaves",weight of stem and leaves,3.395,0.534
+245,Celery,weight of leaf stalk,5.881,0.331
+246,"Celery, juice",weight of juice as single strength (or standard dilution),31.538,2.457
+247,Rhubarb,weight of stalks; excluding leaves,14.201,1.528
+248,Olive,weight of fruit; excluding pit,6.637,0.482
+249,"Olive, oil",weight of oil,15.708,3.206
+250,Carob,dry weight of bean; flour,3.395,0.534
+251,Fig,weight of fruit,3.429,0.54
+252,"Fig, dried",dry weight of fruit,11.476,1.807
+253,Guava,weight of pulp; excluding peel; juice,4.346,2.278
+254,Tamarind,"weight of pulp, including seeds; excluding peel; juice",9.983,1.571
+255,Date,"weight of fruit, excluding pit",21.075,2.024
+256,Lychee,weight of pulp; excluding peel,5.67,0.893
+257,Avocado,weight of pulp; excluding skin and pit,9.187,0.547
+258,Banana,weight of pulp; excluding peel; juice,3.979,0.374
+259,"Banana, dried",dry weight of dried pulp; excluding peel (include weight of fruit from chips),15.406,1.448
+260,Mango,weight of pulp; excluding peel,4.923,0.639
+261,"Mango, dried",weight of dried pulp,17.121,2.695
+262,"Mango, juice",weight of juice at single strength (or standard dilution),11.665,1.984
+263,Papaya,weight of pulp; excluding peel and seeds,1.98,0.216
+264,"Papaya, dried",weight of dried pulp,14.218,1.551
+265,"Papaya, juice",weight of juice at single strength (or standard dilution),7.262,1.195
+266,Persimmon,"weight of entire fruit, pulp and peel",2.418,0.307
+267,Plantain,weight of pulp; excluding skin,3.928,2.048
+268,"Plantain, dried",weight of dried pulp only,8.052,0.757
+269,Pomegranate,weight of pulp; excluding peel and seeds,3.637,0.462
+270,"Pomegranate, juice","N/A - Does not exist in ""commodity vocabulary"" weight basis file in current or previous release",12.556,1.902
+271,Breadfruit,weight of pulp; excluding peel,4.346,0.684
+272,Pineapple,weight of pulp; excluding leaves and outer peel,5.619,0.914
+273,"Pineapple, dried",weight of dried pulp only,27.807,4.522
+274,"Pineapple, juice",weight of juice at single strength (or standard dilution),10.671,1.855
+275,Soursop,weight of pulp; excluding peel,5.059,0.796
+276,Passionfruit,weight of pulp; excluding seeds and peel,4.346,0.684
+277,"Passionfruit, juice",weight of juice at single strength (or standard dilution),11.665,1.984
+278,"Beef, meat","weight of meat; excluding the weight of bone, and all nutrient fat",67.895,33.105
+279,"Beef, meat, dried","weight of dried meat; excluding bones, and trimmable fat",93.695,45.685
+280,"Beef, meat byproducts",weight of meat; excluding bone; may contain some fat,67.895,33.105
+281,"Beef, fat",weight of nutrient fat only; includes  nutrient fat from beef meat,67.895,33.105
+282,"Beef, liver",weight of organ including nutrient fat,67.895,33.105
+283,"Goat, meat","weight of meat; excluding weight of bone, and all nutrient fat and skin",33.613,34.745
+284,"Goat, meat byproducts",weight of meat; excluding bone; may include some trimmable fat and/or skin,33.613,34.745
+285,"Goat, fat",weight of nutrient fat only; include nutrient fat from goat meat,33.613,34.745
+286,"Pork, meat","weight of meat; excluding weight of bone, and all nutrient fat and skin",28.62,5.56
+287,"Pork, skin",dry weight of skin including nutrient fat,28.62,5.56
+288,"Pork, meat byproducts",weight of meat; excluding bone; may include some trimmable fat and skin,28.62,5.56
+289,"Pork, fat",weight of nutrient  fat only; includes weight of nutrient fat from meat,28.62,5.56
+290,"Pork, liver",weight of organ including nutrient fat,28.62,5.56
+291,"Sheep, meat","weight of meat; excluding weight of bone, total nutrient fat and skin",33.613,34.745
+292,"Sheep, meat byproducts",weight of meat; excluding bones; may include some trimmable fat and/or skin,33.613,34.745
+293,"Sheep, fat",weight of nutrient fat only; includes nutrient fat from meat,33.613,34.745
+294,"Sheep, liver","weight of organ, including nutrient fat",33.613,34.745
+295,"Milk, fat",weight of nutrient fat only,59.356,11.018
+296,"Milk, nonfat solids",Remaining weight of milk after subtracting milk fat and moisture content of milk,59.356,11.018
+297,"Milk, water",Moisture content of milk,0,0
+298,"Meat, game","weight of meat; excluding bone, trimmable fat and skin",8.5,0.84
+299,"Rabbit, meat","weight of meat; excluding bone, trimmable fat and skin",55.22,4.541
+300,"Chicken, meat","weight of flesh; excluding the weight of bone, total nutrient fat, and skin",27.338,4.188
+301,"Chicken, liver",weight of organ;  including nutrient fat,27.338,4.188
+302,"Chicken, meat byproducts",weight of meat; excluding bone; may include some trimmable fat and/or skin,27.338,4.188
+303,"Chicken, fat",weight of nutrient fat only; includes weight of nutrient fat from chicken meat and skin,27.338,4.188
+304,"Chicken, skin",weight of skin only (0 grams nutrient fat),27.338,4.188
+305,"Turkey, meat","weight of meat; excluding bone, all nutrient fat, and skin",27.338,2.571
+306,"Turkey, liver","weight of organ, including nutrient fat",27.338,2.571
+307,"Turkey, meat byproducts",weight of meat; excluding bone (may contain some fat and/or skin),27.338,2.571
+308,"Turkey, fat",weight of nutrient  fat only; includes nutrient fat from meat and skin,27.338,2.571
+309,"Turkey, skin",weight of skin only (0 grams nutrient fat),27.338,2.571
+310,"Poultry, other, meat","weight of meat; excluding weight of bone, and all nutrient fat, and skin",24.475,2.831
+311,"Poultry, other, liver","weight of organ, including nutrient fat",24.475,2.831
+312,"Poultry, other, meat byproducts",weight of meat; excluding bone; may contain some trimmable fat and/or skin,24.475,2.831
+313,"Poultry, other, fat",weight of nutrient  fat only; includes weight of nutrient fat from meat and skin,24.475,2.831
+314,"Poultry, other, skin",weight of nutrient  fat only; includes weight of nutrient fat from meat and skin,24.475,2.831
+315,"Egg, whole",weight of white and yolk; excluding shell,23.002,3.754
+316,"Egg, white",weight of egg white,23.002,3.754
+317,"Egg, yolk",weight of egg yolk,23.002,3.754
+318,Fish-freshwater finfish,"weight of edible portion; excluding head, tail, scales, fins, viscera, inedible bones and skin",22.35,1.571
+319,"Fish-freshwater finfish, farm raised","weight of edible portion; excluding head, tail, scales, fins, viscera, inedible bones and skin",157.432,5.717
+320,"Fish-saltwater finfish, tuna","weight of edible portion; excluding head, tail, scales, fins, viscera, inedible bones and skin",32.18,2.148
+321,"Fish-saltwater finfish, other","weight of edible portion; excluding head, tail, scales, fins, viscera, inedible bones and skin",130.894,3.021
+322,"Fish-shellfish, crustacean","weight of edible portion; excluding shell, gills, and viscera",321.071,30.658
+323,"Fish-shellfish, mollusc",weight of edible portion; excluding shells,172.822,3.143
+324,"Water, direct, tap",0,0.007,0
+325,"Water, direct, bottled",0,0.133,0.009
+326,"Water, indirect, all sources",0,0,0
+327,"Amaranth, grain",dry weight of grain; include Amaranth flour,2.584,0.393
+328,"Artichoke, globe",edible portion of flowerhead,16.925,0.846
+329,Belgium endive,weight of leaves,1.215,0.064
+330,"Cocoa bean, chocolate",weight of chocolate; cocoa butter,86.122,11.25
+331,"Cocoa bean, powder",weight of powder,3.745,33.647
+332,"Coffee, roasted bean",dry weight of bean,64.581,6.279
+333,"Coffee, instant",dry weight of powder or granules,181.25,19.2
+334,"Grape, leaves",weight of leaves,2.566,0.186
+335,Honey,weight of honey,3.45,2.44
+336,Bee pollen,"N/A - Does not exist in ""commodity vocabulary"" weight basis file in current or previous release",3.45,2.44
+337,Hops,weight of dried hops,2.702,2.35
+338,"Maple, sugar",dry weight of sugar,94.336,9.186
+339,Maple syrup,weight of syrup,69.365,6.754
+340,"Palm, oil",weight of oil,10.071,7.221
+341,Peanut,weight of nutmeat; excluding shell,1.09,0.374
+342,"Peanut, butter",weight of ground peanuts; excluding shell,2.963,1.132
+343,"Peanut, oil",weight of oil,3.158,4.656
+344,Peppermint,weight of leaves and stems,1.551,0.221
+345,"Peppermint, oil",weight of oil,11.9,2.729
+346,"Psyllium, seed",dry weight of psyllium husks,2.584,0.393
+347,Seaweed,weight of vegetation (wet and dry),2.566,0.186
+348,"Sugarcane, sugar",dry weight of cane sugar (sucrose),5.146,0.7
+349,"Sugarcane, molasses",weight of molasses,5.079,0.488
+350,"Tea, dried",dry weight of tea leaves,53.431,3.82
+351,"Tea, instant",dry weight of powder,154.951,11.079
+352,Vinegar,"Weight of vinegar made from apple, grape or rice juice in recipe",7.986,1.319
+353,Water chestnut,weight of tuber,1.849,0.277
+354,"Cheese, cheddar",,48.47,8.47
+355,"Cheese, mozzarella",,45.39,7.3
+356,"White bread, medium slices, plastic bag",,,1.5553375
+357,"White bread, thick slices, plastic bag",,,1.498375
+358,"Wholemeal bread, medium slices, plastic bag",,,1.4454875
+359,"Wholemeal bread, thick slices, plastic bag",,,1.38845
+360,White Loaf Bread - Industrial Production,,5252.4,-0.56
+361,White Loaf Bread - Home Production,,7200,-0.501
