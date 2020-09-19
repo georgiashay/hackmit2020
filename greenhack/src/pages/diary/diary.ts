@@ -15,4 +15,10 @@ export class DiaryPage {
     if (!params) params = {};
     this.navCtrl.push(FoodEntryPage);
   }
+  goBackInTime() {
+
+  }
+  goForwardInTime() {
+    
+  }
 }
