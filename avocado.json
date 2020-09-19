@@ -1,0 +1,18 @@
+{
+    "recipe": {
+        "titles": [{"language":"en","value":"peanut"}],
+        "date": "2019-09-06",
+        "location": "Australia",
+        "kitchen-id": "test",
+        "servings": 1,
+        "ingredients": [
+                        {
+			"id": 3000000,
+                        "names":[{"language":"en","value":"corn"}],
+                        "amount": 100,
+                        "unit": "gram",
+			"origin": "Peru"
+                        }
+                        ]
+    }
+}
