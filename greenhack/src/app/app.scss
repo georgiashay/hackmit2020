@@ -14,21 +14,21 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
-
-:root {
-  --ion-color-gradeA: #34eb3d;
-  --ion-color-gradeA: 52, 235, 61
-  --ion-color-gradeA-contrast: #ffffff;
-  --ion-color-gradeA-contrast-rgb: 255,255,255;
-  --ion-color-gradeA-shade: #5ca56c;
-  --ion-color-gradeA-tint: #78c288;
-}
-
-.ion-color-gradeA {
-  --ion-color-base: var(--ion-color-gradeA);
-  --ion-color-base-rgb: var(--ion-color-gradeA);
-  --ion-color-contrast: var(--ion-color-gradeA);
-  --ion-color-contrast-rgb: var(--ion-color-gradeA);
-  --ion-color-shade: var(--ion-color-gradeA);
-  --ion-color-tint: var(--ion-color-gradeA);
-}
+// 
+// :root {
+//   --ion-color-gradeA: #34eb3d;
+//   --ion-color-gradeA: 52, 235, 61
+//   --ion-color-gradeA-contrast: #ffffff;
+//   --ion-color-gradeA-contrast-rgb: 255,255,255;
+//   --ion-color-gradeA-shade: #5ca56c;
+//   --ion-color-gradeA-tint: #78c288;
+// }
+//
+// .ion-color-gradeA {
+//   --ion-color-base: var(--ion-color-gradeA);
+//   --ion-color-base-rgb: var(--ion-color-gradeA);
+//   --ion-color-contrast: var(--ion-color-gradeA);
+//   --ion-color-contrast-rgb: var(--ion-color-gradeA);
+//   --ion-color-shade: var(--ion-color-gradeA);
+//   --ion-color-tint: var(--ion-color-gradeA);
+// }
