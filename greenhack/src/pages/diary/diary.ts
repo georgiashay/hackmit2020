@@ -66,7 +66,7 @@ export class DiaryPage {
   }
 
   goToFoodEntry(meal) {
-    this.navCtrl.push(FoodEntryPage, { meal });
+    this.navCtrl.push(FoodEntryPage, { meal: meal, date: new Date(this.date) });
   }
 
   goBackInTime() {

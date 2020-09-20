@@ -19,10 +19,12 @@ export class AddFoodPage {
   item: any;
   grams: number;
   meal: string;
+  date: Date;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider) {
     this.item = this.navParams.get("item");
     this.meal = this.navParams.get("meal");
+    this.date = this.navParams.get("date");
   }
 
   ionViewDidLoad() {
@@ -38,9 +40,9 @@ export class AddFoodPage {
       total_ced: this.item.ced !== undefined ? (this.grams * this.item.ced)/1000 : undefined,
       total_ghg: this.item.ghg !== undefined ? (this.grams * this.item.ghg)/1000 : undefined,
       meal: this.meal,
-      date: new Date()
+      date: this.date
     });
-    this.navCtrl.setRoot(DiaryPage);
+    this.navCtrl.setRoot(DiaryPage, { diaryDate: this.date });
     this.navCtrl.popToRoot();
   }
 }
