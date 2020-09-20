@@ -3,6 +3,8 @@ import { NavController } from 'ionic-angular';
 import { FoodEntryPage } from '../food-entry/food-entry';
 import { EntriesProvider } from "../../providers/entries/entries";
 import { FoodsProvider } from "../../providers/foods/foods";
+import * as moment from "moment";
+
 @Component({
   selector: 'page-diary',
   templateUrl: 'diary.html'
@@ -27,6 +29,7 @@ export class DiaryPage {
       icon: "ice-cream"
     }
   ];
+  date: Date = new Date();
   // entriesService: any;
   // this tells the tabs component which Pages
   // should be each tab's root Page
@@ -39,10 +42,14 @@ export class DiaryPage {
     }
   }
 
-  ionViewDidEnter() {
-    this.entriesService.getEntries(new Date()).then((entries) => {
+  reloadEntries() {
+    this.entriesService.getEntries(this.date).then((entries) => {
       this.entries = entries;
     });
+  }
+
+  ionViewDidEnter() {
+    this.reloadEntries();
   }
 
   calculateMeal(meal) {
@@ -59,10 +66,25 @@ export class DiaryPage {
   }
 
   goBackInTime() {
-
+    this.date.setDate(this.date.getDate() - 1);
+    this.reloadEntries();
   }
 
   goForwardInTime() {
-
+    this.date.setDate(this.date.getDate() + 1);
+    this.reloadEntries();
   }
+
+  formatDate() {
+    return moment(this.date).calendar(null,
+    {
+      sameDay: "[Today] M/D/YYYY",
+      nextDay: "[Tomorrow] M/D/YYYY",
+      nextWeek: "dddd M/D/YYYY",
+      lastDay: "[Yesterday] M/D/YYYY",
+      lastWeek: "[Last] dddd M/D/YYYY",
+      sameElse: "M/D/YYYY"
+    });
+  }
+
 }

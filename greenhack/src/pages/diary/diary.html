@@ -8,7 +8,7 @@
     <div style="float:left;cursor:pointer;" (click)="goBackInTime()">
       <ion-icon name="arrow-back" style="padding-left: 1em;"></ion-icon>
     </div>
-    Today
+    {{ formatDate() }}
     <div style="float:right;cursor:pointer" (click)="goForwardInTime()">
       <ion-icon name="arrow-forward" style="padding-right: 1em;"></ion-icon>
     </div>
@@ -16,9 +16,9 @@
 </ion-header>
 <ion-content padding id="diarypage">
   <ion-item text-center>
-    <b>Carbon Footprint Today:</b> <span style="color:#18ab1f">
+    <b>Carbon Footprint: <span style="color:#18ab1f">
       <span *ngIf="calculateTotal() > 0">+</span>{{calculateTotal().toFixed(2)}} lbs
-    </span>
+    </span></b>
   </ion-item>
   <ion-card *ngFor="let meal of meals">
     <ion-list>
