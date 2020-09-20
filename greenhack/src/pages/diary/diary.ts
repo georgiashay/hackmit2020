@@ -12,9 +12,9 @@ export class DiaryPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController, public entriesService: EntriesProvider) {
-    entriesService.getEntries(new Date()).then((entries) => {
-      this.entries = entries;
-    })
+    // entriesService.getEntries(new Date()).then((entries) => {
+    //   this.entries = entries;
+    // })
   }
 
   goToFoodEntry(params){
