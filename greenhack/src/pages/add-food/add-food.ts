@@ -34,7 +34,7 @@ export class AddFoodPage {
 
   
   addFood() {
-    var grams = this.units == "grams" ? this.grams : (this.grams * this.item.grams_unit),
+    var grams = this.units == "grams" ? this.grams : (this.grams * this.item.grams_unit)
     this.entriesService.addEntry({
       food_id: this.item._id,
       food_name: this.item.desc,
