@@ -35,7 +35,13 @@ export class StatisticsPage {
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController, public entriesService: EntriesProvider) {
+  }
+
+  ionViewDidEnter() {
     this.daily_stats = { "Breakfast": [], "Lunch": [], "Dinner": [], "Snack": [] };
+    this.dates = [];
+    this.contributors = [];
+    this.biggest_contributors = [];
     var today = new Date();
     var minDate = new Date(today.getTime());
     minDate.setDate(minDate.getDate() - 13);
