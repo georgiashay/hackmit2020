@@ -9,8 +9,8 @@
   <ion-searchbar id="foodentry-search" [(ngModel)]="searchText"></ion-searchbar>
   <ion-list id="foodentry-list">
     <ion-item *ngFor="let item of items | foodfilter:searchText; let i = index" style="cursor:pointer;" (click)="addFood(i)">
-      {{ item.name }}
-      <span item-right>{{ item.ced }}</span>
+      {{ item.desc }}
+      <span item-right>{{ item.ced}}</span>
     </ion-item>
   </ion-list>
 </ion-content>

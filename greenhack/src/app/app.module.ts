@@ -17,6 +17,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { FoodFilterPipe } from "../pipes/filter.pipe";
 import { FoodsProvider } from '../providers/foods/foods';
+import { EntriesProvider } from '../providers/entries/entries';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { FoodsProvider } from '../providers/foods/foods';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     FoodsProvider,
+    EntriesProvider,
   ]
 })
 export class AppModule {}

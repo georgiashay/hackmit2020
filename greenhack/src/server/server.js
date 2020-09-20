@@ -5,7 +5,7 @@ var morgan = require("morgan");
 var bodyParser = require("body-parser");
 var methodOverride = require("method-override");
 var cors = require("cors");
-var SchemaTypes = mongoose.Schema.Types;
+var Schema = mongoose.Schema
 var creds = require("./creds.json");
 
 mongoose.connect("mongodb+srv://" + creds.username + ":" + creds.password + "@foodproject.uomew.gcp.mongodb.net/food");
@@ -25,21 +25,64 @@ app.use(function(req, res, next) {
 })
 
 const FoodSchema = new mongoose.Schema({
-  name: String,
+  _id: Schema.ObjectId,
+  desc: String,
+  weight_basis: String,
   ced: Number,
   ghg: Number
 }, { collection: "food"});
 
+const EntrySchema = new mongoose.Schema({
+  food_id: Schema.ObjectId,
+  grams: Number,
+  total_ced: Number,
+  total_ghg: Number,
+  meal: String,
+  date: Date
+}, { collection: "entries"});
+
 var Food = mongoose.model("food", FoodSchema);
+var Entry = mongoose.model("entry", EntrySchema);
 
 app.get("/api/foods", function(req, res) {
-  console.log("Fetching foods");
   Food.find(function(err, foods) {
     if (err) {
       res.send(err);
     }
     res.json(foods);
   })
+});
+
+app.post("/api/addEntry", function(req, res) {
+  Entry.create({
+    food_id: req.body.food_id,
+    grams: req.body.grams,
+    total_ced: req.body.total_ced,
+    total_ghg: req.body.total_ghg,
+    meal: req.body.meal,
+    date: req.body.date
+  }, function(err, entry) {
+    if (err) {
+      res.send(err);
+    }
+    res.json(entry);
+  })
+});
+
+app.get("/api/getEntries", function(req, res) {
+  var query = {};
+  if (req.query.minDate) {
+    query.date = {
+      $gte: req.query.minDate,
+      $lte: req.query.maxDate
+    }
+  }
+  Entry.find(query, function (err, entries) {
+    if (err) {
+      res.send(err);
+    }
+    res.json(entries);
+  });
 });
 
 app.listen(8080);

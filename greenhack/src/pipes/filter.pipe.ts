@@ -11,7 +11,7 @@ export class FoodFilterPipe implements PipeTransform {
     }
     searchText = searchText.toLocaleLowerCase();
     return items.filter(item => {
-      return item.name.toLocaleLowerCase().includes(searchText);
+      return item.desc.toLocaleLowerCase().includes(searchText);
     });
   }
 }
