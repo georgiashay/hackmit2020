@@ -130,6 +130,17 @@ export class EntriesProvider {
     })
   }
 
+  getAllEntries() {
+    return new Promise(resolve => {
+      this.http.get("http://localhost:8080/api/getEntries")
+      .map(res=>_.values(res))
+      .subscribe(entries => {
+        this.saveEntries(entries);
+        resolve(this.entries);
+      });
+    });
+  }
+
   addEntry(newEntry: any) {
     return new Promise(resolve => {
       this.http.post("http://localhost:8080/api/addEntry", newEntry)
