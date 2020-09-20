@@ -17,7 +17,7 @@ export class EntriesProvider {
     this.entries = {};
   }
 
-  private addEntries(entries) {
+  private saveEntries(entries) {
     for (var i = 0; i < entries.length; i++) {
       var entry = entries[i];
       entry.date = new Date(entry.date);
@@ -80,8 +80,23 @@ export class EntriesProvider {
       this.http.get("http://localhost:8080/api/getEntries", { params })
       .map(res=>_.values(res))
       .subscribe(entries => {
-        this.addEntries(entries);
-        resolve(entries[this.getDateString(date)]);
+        this.saveEntries(entries);
+        var dateEntries = this.entries[this.getDateString(date)];
+        if (dateEntries) {
+          resolve(dateEntries);
+        } else {
+          resolve({});
+        }
+      });
+    });
+  }
+
+  addEntry(newEntry: any) {
+    return new Promise(resolve => {
+      this.http.post("http://localhost:8080/api/addEntry", newEntry)
+      .subscribe(entry => {
+        this.saveEntries([entry]);
+        resolve(entry);
       });
     });
   }

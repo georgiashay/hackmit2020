@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { DiaryPage } from "../diary/diary";
+import { EntriesProvider } from "../../providers/entries/entries";
+
 /**
  * Generated class for the AddFoodPage page.
  *
@@ -16,9 +18,11 @@ export class AddFoodPage {
 
   item: any;
   grams: number;
+  meal: string;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider) {
     this.item = this.navParams.get("item");
+    this.meal = this.navParams.get("meal");
   }
 
   ionViewDidLoad() {
@@ -26,7 +30,15 @@ export class AddFoodPage {
   }
 
   addFood() {
-    // Todo add food to db
+    this.entriesService.addEntry({
+      food_id: this.item._id,
+      food_name: this.item.desc,
+      grams: this.grams,
+      total_ced: this.item.ced !== undefined ? (this.grams * this.item.ced)/1000 : undefined,
+      total_ghg: this.item.ghg !== undefined ? (this.grams * this.item.ghg)/1000 : undefined,
+      meal: this.meal,
+      date: new Date()
+    });
     this.navCtrl.setRoot(DiaryPage);
     this.navCtrl.popToRoot();
   }
