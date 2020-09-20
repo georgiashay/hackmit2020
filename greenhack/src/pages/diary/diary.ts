@@ -9,18 +9,49 @@ import { EntriesProvider } from "../../providers/entries/entries";
 })
 export class DiaryPage {
   entries: any;
+  meals: any = [
+    {
+      name: "Breakfast",
+      icon: "cafe"
+    },
+    {
+      name: "Lunch",
+      icon: "pizza"
+    },
+    {
+      name: "Dinner",
+      icon: "restaurant"
+    },
+    {
+      name: "Snack",
+      icon: "ice-cream"
+    }
+  ];
   // entriesService: any;
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController, public entriesService: EntriesProvider) {
-    // this.entriesService = _entriesService;
+    this.entries = {
+      "Breakfast": [],
+      "Lunch": [],
+      "Dinner": [],
+      "Snack": []
+    }
   }
 
   ionViewDidEnter() {
     this.entriesService.getEntries(new Date()).then((entries) => {
       this.entries = entries;
-      console.log(this.entries);
     });
+  }
+
+  calculateMeal(meal) {
+    return this.entries[meal].reduce((acc, cur) => acc + cur.total_ghg * 2204.62, 0);
+  }
+
+  calculateTotal() {
+    return this.meals.map(meal => this.calculateMeal(meal.name))
+          .reduce((a, b) => a + b, 0);
   }
 
   goToFoodEntry(meal) {
