@@ -85,12 +85,14 @@ export class EntriesProvider {
         if (dateEntries) {
           resolve(dateEntries);
         } else {
-          resolve({
+          var blankEntry = {
             "Breakfast": [],
             "Lunch": [],
             "Dinner": [],
             "Snack": []
-          });
+          };
+          this.entries[this.getDateString(date)] = blankEntry;
+          resolve(this.entries[this.getDateString(date)]);
         }
       });
     });
