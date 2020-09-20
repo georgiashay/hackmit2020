@@ -19,7 +19,7 @@ export class AddFoodPage {
   item: any;
   grams: number;
   meal: string;
-  unit: string;
+  units: string;
   date: Date;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider) {
