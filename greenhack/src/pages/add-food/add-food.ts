@@ -26,13 +26,13 @@ export class AddFoodPage {
     this.item = this.navParams.get("item");
     this.meal = this.navParams.get("meal");
     this.date = this.navParams.get("date");
+    this.units = "grams";
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AddFoodPage');
   }
 
-  
   addFood() {
     var grams = this.units == "grams" ? this.grams : (this.grams * this.item.grams_unit),
     this.entriesService.addEntry({
