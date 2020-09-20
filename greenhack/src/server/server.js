@@ -78,7 +78,7 @@ app.get("/api/getEntries", function(req, res) {
   if (req.query.minDate) {
     query.date = {
       $gte: req.query.minDate,
-      $lte: req.query.maxDate
+      $lt: req.query.maxDate
     }
   }
   Entry.find(query, function (err, entries) {

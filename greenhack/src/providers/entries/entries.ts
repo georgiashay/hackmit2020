@@ -58,7 +58,7 @@ export class EntriesProvider {
     if (day.length < 2)
         day = "0" + day;
 
-    return [year, month, day].join("/");
+    return [month, day, year].join("/");
   }
 
   getEntries(date: Date) {
@@ -94,6 +94,40 @@ export class EntriesProvider {
         }
       });
     });
+  }
+
+  private getDateArray(minDate, maxDate) {
+    var dateArray = [];
+    var currentDate = new Date(minDate.getTime());
+    while (currentDate <= maxDate) {
+      dateArray.push(new Date(currentDate));
+      currentDate.setDate(currentDate.getDate() + 1);
+    }
+    return dateArray.map((date) => this.getDateString(date));
+  }
+
+  getEntriesRange(_minDate: Date, _maxDate: Date) {
+    var minDate = this.stripTime(_minDate);
+    var maxDate = this.stripTime(_maxDate);
+    var maxDateEnd = new Date(maxDate.getTime());
+    maxDateEnd.setDate(maxDateEnd.getDate() + 1);
+
+    var params = new HttpParams();
+    params = params.append("minDate", minDate.toISOString());
+    params = params.append("maxDate", maxDateEnd.toISOString());
+    console.log(params);
+    return new Promise(resolve => {
+      this.http.get("http://localhost:8080/api/getEntries", { params })
+      .map(res=>_.values(res))
+      .subscribe(entries => {
+        this.saveEntries(entries);
+        var datesInRange = this.getDateArray(minDate, maxDate);
+        var rangeEntries = {};
+        datesInRange.forEach((date) => rangeEntries[date] = this.entries[date] ||
+            { "Breakfast": [], "Lunch": [], "Dinner": [], "Snack": [] });
+        resolve(rangeEntries);
+      })
+    })
   }
 
   addEntry(newEntry: any) {
