@@ -16,9 +16,19 @@
     {{ item.desc }}
   </ion-item>
   <ion-item>
-    <ion-label>Amount (grams):</ion-label>
+    <ion-label>Amount:</ion-label>
     <ion-input type="number" value=1 inputmode="numeric" min=0 [(ngModel)]="grams"></ion-input>
   </ion-item>
+  <ion-list  *ngIf="item.grams_unit!=''">
+
+  <ion-item>
+     <ion-label>Units:</ion-label>
+       <ion-select>
+         <ion-option  value="grams">grams</ion-option>
+         <ion-option  value="units">{{ item.desc }}(s)</ion-option>
+       </ion-select>
+    </ion-item>
+  </ion-list>
   <button ion-button block (click)="addFood()">
     Add
   </button>
