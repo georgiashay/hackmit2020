@@ -89,9 +89,7 @@ export class StatisticsPage {
         i++;
       }
 
-      console.log(this.biggest_contributors);
-
-      var barChart = new Chart(this.barCanvas.nativeElement, {
+      new Chart(this.barCanvas.nativeElement, {
         type: "bar",
         data: {
           labels: this.dates,
@@ -130,11 +128,6 @@ export class StatisticsPage {
 
   private calculateMeal(obj, meal) {
     return obj[meal].reduce((acc, cur) => acc + cur.total_ghg * 2204.62, 0);
-  }
-
-  private calculateTotal(obj) {
-    return this.meals.map(meal => this.calculateMeal(obj, meal.name))
-          .reduce((a, b) => a + b, 0);
   }
 
 }

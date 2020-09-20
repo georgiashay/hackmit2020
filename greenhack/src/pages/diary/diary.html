@@ -26,7 +26,7 @@
         <ion-icon name="{{meal.icon}}" item-left></ion-icon>
         <b>{{meal.name}}</b>
         <span item-right><b>
-          <span *ngIf="calculateMeal(meal.name) > 0">+</span>{{calculateMeal(meal.name).toFixed(2)}} lbs
+          <span *ngIf="calculateMeal(meal.name) > 0">+</span>{{calculateMeal(meal.name).toFixed(2)}} lbs&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </b></span>
       </ion-item>
       <ion-item color="none" id="foodEntry-list-item7" *ngFor="let food of entries[meal.name]">
@@ -35,6 +35,9 @@
         <span item-right><b>
           <span *ngIf="food.total_ghg > 0">+</span>{{(food.total_ghg * 2204.62).toFixed(2)}} lbs
         </b></span>
+        <button ion-button item-right color="dark"(click) = "entriesService.removeEntry(food._id)">
+          <ion-icon name="trash"></ion-icon>
+        </button>
       </ion-item>
       <ion-item color="light" on-click="goToFoodEntry(meal.name)" text-center button style="cursor:pointer;">
         <ion-icon name="add"></ion-icon>

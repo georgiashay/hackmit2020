@@ -89,4 +89,15 @@ app.get("/api/getEntries", function(req, res) {
   });
 });
 
+app.post("/api/removeEntry", function(req, res) {
+  Entry.deleteOne({ _id: req.body.id }, function(err, result) {
+    console.log(result);
+    if (err) {
+      res.send(err);
+    } else {
+      res.json({ status: "success"});
+    }
+  })
+})
+
 app.listen(8080);

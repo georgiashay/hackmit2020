@@ -150,4 +150,25 @@ export class EntriesProvider {
       });
     });
   }
+
+  private flushEntry(id: String) {
+    Object.keys(this.entries).forEach((date) => {
+      Object.keys(this.entries[date]).forEach((meal) => {
+        var index = this.entries[date][meal].map((food) => food._id).indexOf(id);
+        if (index !== -1) {
+          this.entries[date][meal].splice(index, 1);
+          return;
+        }
+      });
+    })
+  }
+
+  removeEntry(id: String) {
+    return new Promise(resolve => {
+      this.http.post("http://localhost:8080/api/removeEntry", { id })
+      .subscribe(response => {
+        this.flushEntry(id);
+      })
+    })
+  }
 }
