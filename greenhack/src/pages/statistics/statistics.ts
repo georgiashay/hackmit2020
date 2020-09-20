@@ -127,7 +127,7 @@ export class StatisticsPage {
   }
 
   private calculateMeal(obj, meal) {
-    return obj[meal].reduce((acc, cur) => acc + cur.total_ghg * 2204.62, 0);
+    return obj[meal].reduce((acc, cur) => acc + cur.total_ghg * 2.20462, 0);
   }
 
 }

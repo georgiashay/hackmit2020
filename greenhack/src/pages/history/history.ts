@@ -23,7 +23,7 @@ export class HistoryPage {
           date: date,
           ghg: Object.keys(entries[date]).map((meal) => {
             return entries[date][meal].reduce((sum, food) => sum + food.total_ghg, 0);
-          }).reduce((sum, a) => sum + a, 0) * 2204.62
+          }).reduce((sum, a) => sum + a, 0) * 2.20462
         });
       });
       console.log(this.history);

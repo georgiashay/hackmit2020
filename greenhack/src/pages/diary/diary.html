@@ -33,7 +33,7 @@
         <ion-badge [ngStyle] = "{'background-color': foodService.ratingColor(food.food_rating) }">{{ food.food_rating }}</ion-badge>
         &nbsp; {{food.food_name}}
         <span item-right><b>
-          <span *ngIf="food.total_ghg > 0">+</span>{{(food.total_ghg * 2204.62).toFixed(2)}} lbs
+          <span *ngIf="food.total_ghg > 0">+</span>{{(food.total_ghg * 2.20462).toFixed(2)}} lbs
         </b></span>
         <button ion-button item-right color="dark"(click) = "entriesService.removeEntry(food._id)">
           <ion-icon name="trash"></ion-icon>

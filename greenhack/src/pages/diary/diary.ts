@@ -57,7 +57,7 @@ export class DiaryPage {
   }
 
   calculateMeal(meal) {
-    return this.entries[meal].reduce((acc, cur) => acc + cur.total_ghg * 2204.62, 0);
+    return this.entries[meal].reduce((acc, cur) => acc + cur.total_ghg * 2.20462, 0);
   }
 
   calculateTotal() {
