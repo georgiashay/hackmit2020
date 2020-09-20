@@ -19,11 +19,8 @@ export class AddFoodPage {
   item: any;
   grams: number;
   meal: string;
-<<<<<<< HEAD
   unit: string;
-=======
   date: Date;
->>>>>>> 9b63105316eeaad25c166cf3b6faf607eeff331e
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider) {
     this.item = this.navParams.get("item");
@@ -37,7 +34,6 @@ export class AddFoodPage {
 
   
   addFood() {
-    console.log(this.units)
     var grams = this.units == "grams" ? this.grams : (this.grams * this.item.grams_unit),
     this.entriesService.addEntry({
       food_id: this.item._id,
