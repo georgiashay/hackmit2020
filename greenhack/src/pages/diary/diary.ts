@@ -9,12 +9,17 @@ import { EntriesProvider } from "../../providers/entries/entries";
 })
 export class DiaryPage {
   entries: any;
+  entriesService: any;
   // this tells the tabs component which Pages
   // should be each tab's root Page
   constructor(public navCtrl: NavController, public entriesService: EntriesProvider) {
-    // entriesService.getEntries(new Date()).then((entries) => {
-    //   this.entries = entries;
-    // })
+    this.entriesService = entriesService;
+  }
+
+  ionViewDidEnter() {
+    this.entriesService.getEntries(new Date()).then((entries) => {
+      this.entries = entries;
+    });
   }
 
   goToFoodEntry(params){
