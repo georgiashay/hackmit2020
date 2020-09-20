@@ -19,6 +19,7 @@ export class AddFoodPage {
   item: any;
   grams: number;
   meal: string;
+  unit: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider) {
     this.item = this.navParams.get("item");
@@ -29,14 +30,16 @@ export class AddFoodPage {
     console.log('ionViewDidLoad AddFoodPage');
   }
 
+  
   addFood() {
+    console.log(this.units)
+    var grams = this.units == "grams" ? this.grams : (this.grams * this.item.grams_unit),
     this.entriesService.addEntry({
       food_id: this.item._id,
       food_name: this.item.desc,
       food_rating: this.item.rating,
-      grams: this.grams,
       total_ced: this.item.ced !== undefined ? (this.grams * this.item.ced)/1000 : undefined,
-      total_ghg: this.item.ghg !== undefined ? (this.grams * this.item.ghg)/1000 : undefined,
+      total_ghg: this.item.ghg !== undefined ? (grams * this.item.ghg)/1000 : undefined,
       meal: this.meal,
       date: new Date()
     });
