@@ -16,7 +16,7 @@
     {{ item.desc }}
   </ion-item>
   <ion-item>
-    <ion-label >Amount:</ion-label>
+    <ion-label >Amount<span *ngIf="item.grams_unit!=''"> (grams) </span></ion-label>
     <ion-input type="number" value=1 inputmode="numeric" min=0 [(ngModel)]="grams"></ion-input>
   </ion-item>
   <ion-list  *ngIf="item.grams_unit!=''">

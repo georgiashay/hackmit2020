@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, NavParams } from 'ionic-angular';
 import { FoodEntryPage } from '../food-entry/food-entry';
 import { EntriesProvider } from "../../providers/entries/entries";
 import { FoodsProvider } from "../../providers/foods/foods";
@@ -33,7 +33,11 @@ export class DiaryPage {
   // entriesService: any;
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(public navCtrl: NavController, public entriesService: EntriesProvider, public foodService: FoodsProvider) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public entriesService: EntriesProvider, public foodService: FoodsProvider) {
+    this.date = this.navParams.get("diaryDate");
+    if (this.date === undefined) {
+      this.date = new Date();
+    }
     this.entries = {
       "Breakfast": [],
       "Lunch": [],
@@ -62,7 +66,7 @@ export class DiaryPage {
   }
 
   goToFoodEntry(meal) {
-    this.navCtrl.push(FoodEntryPage, { meal });
+    this.navCtrl.push(FoodEntryPage, { meal: meal, date: new Date(this.date) });
   }
 
   goBackInTime() {
