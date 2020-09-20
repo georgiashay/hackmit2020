@@ -8,9 +8,9 @@
 <ion-content padding id="foodentrypage">
   <ion-searchbar id="foodentry-search" [(ngModel)]="searchText"></ion-searchbar>
   <ion-list id="foodentry-list">
-    <ion-item *ngFor="let item of items | foodfilter:searchText; let i = index" style="cursor:pointer;" (click)="addFood(i)">
-      {{ item.desc }}
-      <span item-right>{{ item.ghg }}</span>
+    <ion-item *ngFor="let item of (items | foodfilter:searchText);" style="cursor:pointer;" (click)="addFood(item.index)">
+      {{ item.value.desc }}
+      <span item-right>{{ item.value.ghg }}</span>
     </ion-item>
   </ion-list>
 </ion-content>

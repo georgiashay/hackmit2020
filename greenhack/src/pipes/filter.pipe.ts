@@ -7,11 +7,12 @@ export class FoodFilterPipe implements PipeTransform {
       return [];
     }
     if (!searchText) {
-      return items;
+      return items.map((value, index) => { return { index, value }; });
     }
     searchText = searchText.toLocaleLowerCase();
-    return items.filter(item => {
-      return item.desc.toLocaleLowerCase().includes(searchText);
-    });
+    return items.reduce((acc, value, index) => {
+      return value.desc.toLocaleLowerCase().includes(searchText) ?
+      [...acc, { index, value }] : acc;
+    }, [])
   }
 }

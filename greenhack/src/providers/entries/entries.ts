@@ -11,6 +11,7 @@ import * as _ from "lodash";
 */
 @Injectable()
 export class EntriesProvider {
+  // entries: { [number, number, number] : any };
   entries: any;
 
   constructor(public http: HttpClient) {
@@ -42,6 +43,10 @@ export class EntriesProvider {
     // }
   }
 
+  private dateTuple(date) {
+
+  }
+
   private stripTime(date: Date) {
     var newDate = new Date(date.getTime());
     newDate.setHours(0, 0, 0, 0);
@@ -52,7 +57,7 @@ export class EntriesProvider {
     // if (this.entries[date]) {
     //   return this.entries[date];
     // }
-    // 
+    //
     // var newDate = this.stripTime(date);
     // var nextDate = new Date(newDate.getTime());
     // nextDate.setDate(newDate.getDate() + 1);
