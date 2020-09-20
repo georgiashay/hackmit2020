@@ -9,6 +9,7 @@
   <ion-searchbar id="foodentry-search" [(ngModel)]="searchText"></ion-searchbar>
   <ion-list id="foodentry-list">
     <ion-item *ngFor="let item of (items | foodfilter:searchText);" style="cursor:pointer;" (click)="addFood(item.index)">
+      <ion-badge [ngStyle] = "{'background-color': foodService.ratingColor(item.value.rating) }">{{ item.value.rating }}</ion-badge>
       {{ item.value.desc }}
       <span item-right>{{ item.value.ghg }}</span>
     </ion-item>

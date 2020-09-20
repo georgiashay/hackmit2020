@@ -30,8 +30,8 @@
         </b></span>
       </ion-item>
       <ion-item color="none" id="foodEntry-list-item7" *ngFor="let food of entries[meal.name]">
-        <ion-badge style="background-color:#18ab1f;">A</ion-badge>
-        {{food.food_name}}
+        <ion-badge [ngStyle] = "{'background-color': foodService.ratingColor(food.food_rating) }">{{ food.food_rating }}</ion-badge>
+        &nbsp; {{food.food_name}}
         <span item-right><b>
           <span *ngIf="food.total_ghg > 0">+</span>{{(food.total_ghg * 2204.62).toFixed(2)}} lbs
         </b></span>

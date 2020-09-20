@@ -35,6 +35,7 @@ const FoodSchema = new mongoose.Schema({
 const EntrySchema = new mongoose.Schema({
   food_id: Schema.ObjectId,
   food_name: String,
+  food_rating: String,
   grams: Number,
   total_ced: Number,
   total_ghg: Number,
@@ -58,6 +59,7 @@ app.post("/api/addEntry", function(req, res) {
   Entry.create({
     food_id: req.body.food_id,
     food_name: req.body.food_name,
+    food_rating: req.body.food_rating,
     grams: req.body.grams,
     total_ced: req.body.total_ced,
     total_ghg: req.body.total_ghg,

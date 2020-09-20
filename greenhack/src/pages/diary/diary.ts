@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FoodEntryPage } from '../food-entry/food-entry';
 import { EntriesProvider } from "../../providers/entries/entries";
-
+import { FoodsProvider } from "../../providers/foods/foods";
 @Component({
   selector: 'page-diary',
   templateUrl: 'diary.html'
@@ -30,7 +30,7 @@ export class DiaryPage {
   // entriesService: any;
   // this tells the tabs component which Pages
   // should be each tab's root Page
-  constructor(public navCtrl: NavController, public entriesService: EntriesProvider) {
+  constructor(public navCtrl: NavController, public entriesService: EntriesProvider, public foodService: FoodsProvider) {
     this.entries = {
       "Breakfast": [],
       "Lunch": [],

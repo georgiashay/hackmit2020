@@ -33,6 +33,7 @@ export class AddFoodPage {
     this.entriesService.addEntry({
       food_id: this.item._id,
       food_name: this.item.desc,
+      food_rating: this.item.rating,
       grams: this.grams,
       total_ced: this.item.ced !== undefined ? (this.grams * this.item.ced)/1000 : undefined,
       total_ghg: this.item.ghg !== undefined ? (this.grams * this.item.ghg)/1000 : undefined,

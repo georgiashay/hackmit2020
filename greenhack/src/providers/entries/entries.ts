@@ -85,7 +85,12 @@ export class EntriesProvider {
         if (dateEntries) {
           resolve(dateEntries);
         } else {
-          resolve({});
+          resolve({
+            "Breakfast": [],
+            "Lunch": [],
+            "Dinner": [],
+            "Snack": []
+          });
         }
       });
     });
