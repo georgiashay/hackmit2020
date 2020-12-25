@@ -1,20 +1,22 @@
-# hackMIT2020
+# hackMIT2020: Byte-Size Footprint
 
-Brainstorm ideas!!
+Byte-Size Footprint is a mobile food-tracking app that lets you see the carbon footprint of what you're eating.  It draws on the [dataFIELD](http://css.umich.edu/page/datafield?fbclid=IwAR1PZPnfihvdQAm4h7tcNdeRrCH1v5v5iMSF3-O8OMj07HHG5Xx1VFiM_JA) database that contains the carbon impact of a large number of raw ingredients.
 
-Web app
-input food --> carbon footprint/sustainability
+## To Run the API:
 
-https://eaternity.docs.apiary.io/#
+Navigate to the greenhack/src/server folder.  To set it up for the first time, run:
 
-co2-value (sum)
+```npm install```
 
-climate rating (list foods of each rating)
+in a terminal window.  Then provide a creds.json file in the server folder which contains the username and password (in a json object) of a database containing the carbon footprint data.
 
-animal-treatment-label
+Then, to start up the API, run:
 
-animal-treatment-rating
-almost everything from envrionmental footprints
+```node server.js```.
 
-co2-value-improvement-percentage float Comparison of this product's co2 footprint per food unit to the average
-co2-value-reduction-value float The amount of co2 saved by serving this product instead of serving the amount of an average product that provides the same nutritional value
+## To Run the App
+
+If you are running the API yourself, in the constants.ts file, change the FOOD_SERVER location to wherever the API is running (likely localhost:8080).
+
+Run ```npm install``` to set up the app.  Then, to run the app in a web browser run ```ionic serve```.
+
