@@ -2,6 +2,7 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import "rxjs/add/operator/map";
 import * as _ from "lodash";
+import { FOOD_SERVER } from "../../constants";
 
 /*
   Generated class for the EntriesProvider provider.
@@ -77,7 +78,7 @@ export class EntriesProvider {
     params = params.append("maxDate", nextDate.toISOString());
 
     return new Promise(resolve => {
-      this.http.get("http://localhost:8080/api/getEntries", { params })
+      this.http.get(`${FOOD_SERVER}/api/getEntries`, { params })
       .map(res=>_.values(res))
       .subscribe(entries => {
         this.saveEntries(entries);
@@ -119,7 +120,7 @@ export class EntriesProvider {
     params = params.append("maxDate", maxDateEnd.toISOString());
     console.log(params);
     return new Promise(resolve => {
-      this.http.get("http://localhost:8080/api/getEntries", { params })
+      this.http.get(`${FOOD_SERVER}/api/getEntries`, { params })
       .map(res=>_.values(res))
       .subscribe(entries => {
         this.saveEntries(entries);
@@ -134,7 +135,7 @@ export class EntriesProvider {
 
   getAllEntries() {
     return new Promise(resolve => {
-      this.http.get("http://localhost:8080/api/getEntries")
+      this.http.get(`${FOOD_SERVER}/api/getEntries`)
       .map(res=>_.values(res))
       .subscribe(entries => {
         this.saveEntries(entries);
@@ -145,7 +146,7 @@ export class EntriesProvider {
 
   addEntry(newEntry: any) {
     return new Promise(resolve => {
-      this.http.post("http://localhost:8080/api/addEntry", newEntry)
+      this.http.post(`${FOOD_SERVER}/api/addEntry`, newEntry)
       .subscribe(entry => {
         this.saveEntries([entry]);
         resolve(entry);
@@ -167,7 +168,7 @@ export class EntriesProvider {
 
   removeEntry(id: String) {
     return new Promise(resolve => {
-      this.http.post("http://localhost:8080/api/removeEntry", { id })
+      this.http.post(`${FOOD_SERVER}/api/removeEntry`, { id })
       .subscribe(response => {
         this.flushEntry(id);
       })

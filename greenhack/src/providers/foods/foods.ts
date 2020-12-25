@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import "rxjs/add/operator/map";
 import * as _ from "lodash";
+import { FOOD_SERVER } from "../../constants";
 // import { Http, Headers } from "@angular/common/http";
 
 /*
@@ -71,7 +72,7 @@ export class FoodsProvider {
     }
 
     return new Promise(resolve => {
-      this.http.get("http://localhost:8080/api/foods")
+      this.http.get(`${FOOD_SERVER}/api/foods`)
       .map(res=>_.values(res))
       .subscribe(foods => {
         this.foods = foods;
