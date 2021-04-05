@@ -1,1 +1,1 @@
-export const FOOD_SERVER = 'https://carbon.shayoh.duckdns.org';
+export const FOOD_SERVER = 'https://carbon.shaytech.net';
