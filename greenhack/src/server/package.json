@@ -12,12 +12,11 @@
   "devDependencies": {
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
-    "del": "^5.1.0",
+    "del": "^6.0.0",
     "express": "^4.17.1",
     "http": "0.0.1-security",
     "method-override": "^3.0.0",
     "mongoose": "^5.10.6",
-    "morgan": "^1.10.0",
-    "superlogin": "^0.6.1"
+    "morgan": "^1.10.0"
   }
 }
